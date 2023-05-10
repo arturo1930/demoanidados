@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "changelogDate": "20230505202416",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "subdependencia",
+  "fields": [
+    {
+      "fieldName": "valor",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Subdependencia",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "pantalla",
+      "otherEntityRelationshipName": "subdependencia",
+      "relationshipName": "pantalla",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "dependencia",
+      "otherEntityRelationshipName": "subdependencia",
+      "relationshipName": "dependencia",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

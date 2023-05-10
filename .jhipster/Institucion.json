@@ -1,0 +1,39 @@
+{
+  "applications": "*",
+  "changelogDate": "20230505202414",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "institucion",
+  "fields": [
+    {
+      "fieldName": "valor",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Institucion",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "dependencia",
+      "otherEntityRelationshipName": "institucion",
+      "relationshipName": "dependencia",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "pantalla",
+      "otherEntityRelationshipName": "institucion",
+      "relationshipName": "pantalla",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "nivel",
+      "otherEntityRelationshipName": "institucion",
+      "relationshipName": "nivel",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

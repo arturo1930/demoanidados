@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "changelogDate": "20230505202413",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "nivel",
+  "fields": [
+    {
+      "fieldName": "valor",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Nivel",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "institucion",
+      "otherEntityRelationshipName": "nivel",
+      "relationshipName": "institucion",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "pantalla",
+      "otherEntityRelationshipName": "nivel",
+      "relationshipName": "pantalla",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

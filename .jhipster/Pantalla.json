@@ -1,0 +1,40 @@
+{
+  "applications": "*",
+  "changelogDate": "20230505202412",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "pantalla",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Pantalla",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "nivel",
+      "otherEntityRelationshipName": "pantalla",
+      "relationshipName": "nivel",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "dependencia",
+      "otherEntityRelationshipName": "pantalla",
+      "relationshipName": "dependencia",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "institucion",
+      "otherEntityRelationshipName": "pantalla",
+      "relationshipName": "institucion",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "subdependencia",
+      "otherEntityRelationshipName": "pantalla",
+      "relationshipName": "subdependencia",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}
